@@ -8,6 +8,7 @@ mongoose.connect(mongoURI, {
     useUnifiedTopology: true
   })
   .then(() => {
+    console.log(mongoURI);
     console.log('Connected to MongoDB');
   })
   .catch((err) => {
